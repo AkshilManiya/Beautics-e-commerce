@@ -1,0 +1,188 @@
+/* General Layout */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f4f4f9;
+    color: #333;
+    padding: 20px;
+}
+
+.outer_frame {
+    margin: 20px auto;
+    padding: 10px;
+    width: 80%;
+    max-width: 1200px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    border: none;
+}
+
+#profile_show {
+    margin: 20px;
+    border: 1px solid #ddd;
+    padding: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #fafafa;
+    border-radius: 8px;
+}
+
+#image_frame {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#image_frame img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #ddd;
+    margin-bottom: 10px;
+}
+
+#image_frame p {
+    font-size: 0.9em;
+    color: #666;
+    margin: 10px 0;
+}
+
+#image_frame button {
+    padding: 8px 12px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#image_frame button:hover {
+    background-color: #0056b3;
+}
+
+#profile_show .form {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+
+#profile_show .show-data {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+#profile_show .show-data label {
+    width: 30%;
+    font-weight: bold;
+    color: #333;
+}
+
+#profile_show .show-data div {
+    width: 70%;
+    padding: 5px 0;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    padding-left: 10px;
+}
+
+#profile_show button {
+    padding: 8px 15px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+#profile_show button:hover {
+    background-color: #218838;
+}
+
+/* Profile Update Section */
+#profile_update {
+    display: none;
+    flex-direction: column;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin: 20px 0;
+}
+
+#profile_update .input-data {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+#profile_update label {
+    width: 30%;
+    font-weight: bold;
+}
+
+#profile_update input, #profile_update select {
+    width: 70%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#profile_update button {
+    padding: 8px 12px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+#profile_update button:hover {
+    background-color: #0056b3;
+}
+
+/* Password Update Section */
+#password_update {
+    display: none;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin: 20px 0;
+}
+
+#password_update label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}
+
+#password_update input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+#password_update button {
+    padding: 8px 12px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+#password_update button:hover {
+    background-color: #218838;
+}

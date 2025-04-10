@@ -1,0 +1,119 @@
+/* General Page Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("/Beautics/static/system_img/back-img/3.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.alt-register-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin: 20%; */
+    width: 80%;
+    /* height: 100%; */
+}
+
+.alt-register-box {
+    background-color: #ffffff35;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    box-sizing: border-box;
+    backdrop-filter: blur(8px);
+}
+
+.alt-error-message {
+    color: red;
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.alt-form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    font-weight: bold;
+    color: #ffffff;
+    display: block;
+    margin-bottom: 6px;
+}
+
+.alt-input-field, .alt-select-field {
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+.alt-input-field:focus, .alt-select-field:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.25);
+}
+
+button.alt-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button.alt-btn:hover {
+    background-color: #0056b3;
+}
+
+.alt-link {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.alt-link a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.alt-link a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .alt-register-box {
+        padding: 30px;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .alt-register-box {
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    button.alt-btn {
+        padding: 10px;
+    }
+}

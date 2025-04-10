@@ -1,0 +1,350 @@
+/* General Layout */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f4f4f9;
+    color: #333;
+    padding: 20px;
+}
+
+.title {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: left;
+    padding: 10px;
+    color: #4CAF50;
+    /* background-color: #fff; */
+}
+
+/* Top frame styles */
+.top-frame {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.new-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 5px;
+}
+
+.new-button {
+    background-color: #4CAF50;
+}
+
+
+
+
+
+/* Table styles */
+#show {
+    padding: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    table-layout: fixed;
+    overflow-x: auto;
+    display: block;
+}
+
+thead th, tbody td {
+    padding: 10px;
+    text-align: left;
+    white-space: nowrap;
+}
+
+thead th {
+    background-color: #4CAF50;
+    color: #fff;
+}
+
+tbody td {
+    border-bottom: 1px solid #ddd;
+}
+
+
+
+
+
+
+
+
+
+/* Buttons styling */
+tbody button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 12px; /* Reduced font size */
+    margin: 0; /* Ensure no extra space */
+}
+
+.tbl-img{
+    height: 100px;
+    width: 100px;
+}
+
+.deactive {
+    background-color: #f44336;
+}
+
+.active {
+    background-color: #4CAF50;
+}
+
+.update-click {
+    background-color: rgba(96, 130, 255, 0.761);
+}
+
+.delete-click {
+    background-color: lightcoral;
+}
+
+/* Enable horizontal scrolling */
+table {
+    overflow-x: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Form styles */
+#show_insert, #show_update {
+    display: none;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    border-radius: 5px;
+
+}
+
+.frame-title{
+    font-size: 25px;
+    color: #4CAF50;
+    background-color: transparent;
+    text-align: center;
+}
+
+.label {
+    font-size: 16px;
+    margin-top: 15px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    display: block;
+    text-align: left;
+    color: black;
+    padding: 0px;
+}
+
+.input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: calc(100% - 22px);
+    margin-bottom: 20px;
+}
+
+.add-button, .update-button {
+    padding: 7px 15px;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.add-button {
+    background-color: #4CAF50;
+    margin-top: 10px;
+}
+
+.update-button {
+    background-color: #FFC107;
+    margin-top: 10px;
+}
+
+
+
+
+.image{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border: 2px dashed #4CAF50; /* Dashed border around the container */
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    width: 250px;
+    margin: 20px auto; /* Center the div on the page */
+}
+
+#preview {
+    max-width: 200px;
+    max-height: 200px;
+    object-fit: contain; /* Ensures the image fits within the bounds without distortion */
+    margin-bottom: 15px; /* Space between the image and the file input */
+    border: 1px solid #ddd; /* Add a light border around the image */
+    border-radius: 5px; /* Rounded corners for the image */
+    background-color: #fff; /* White background behind the image */
+    padding: 5px; /* Space between the border and the image */
+}
+
+/* File input styling */
+.image input[type="file"] {
+    display: block;
+    padding: 10px;
+    border: 1px solid #4CAF50;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* File input hover effect */
+.image input[type="file"]:hover {
+    background-color: #45a049;
+}
+
+
+
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .top-frame {
+        flex-direction: column;
+    }
+
+    .input-search {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .search-button, .new-button {
+        width: 100%;
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+}
+
+
+
+
+
+
+
+
+.search-frame {
+    padding: 10px 20px;
+    background-color: #f8f9fa;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 0px 20px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.search-frame:hover {
+    background-color: #ffffff;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    transform: scale(1.01); /* Slight zoom-in effect */
+}
+
+.search-item-box {
+    display: flex;
+    align-items: center;
+    padding: 3px 15px;
+    margin-bottom: 5px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.search-item-check {
+    margin-right: 10px;
+    cursor: pointer;
+    width: 18px;
+    height: 18px;
+}
+
+.search-item-label {
+    font-size: 16px;
+    font-weight: 500;
+    color: #333;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+.search-item-input {
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-left: auto;
+    flex-grow: 1;
+    max-width: 300px;
+    transition: border-color 0.3s ease;
+}
+
+.search-item-input:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.search-button, .clear-button{
+    margin-top: 5px;
+    padding: 10px 20px;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.search-button{
+    background-color: #007bff;
+}
+
+.clear-button{
+    background-color: lightcoral;
+}
+
+.search-button:hover , .clear-button:hover{
+    background-color: skyblue;
+}
+
+.search-item-box:last-child {
+    border-bottom: none;
+}
